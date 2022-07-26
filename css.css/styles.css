@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green-primary: #495F41;
+    --green-secundary: #2ED197;
+    --green-hover: #2E5339;
+
+    --background-primary:#F9F9F9;
+    --background-secundary: #EEE5E9;
+
+    --nav--heigth: 7.2rem;
+    font-size: 62.5%;
+    /*1rem = 10px  */
+
+}
+/* ================== GERAL ================== */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    
+}
+.wrapper{
+    width: min(100rem, 100vw);
+}
+ul, a, li {
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    /* move o scroll de forma mais leve */
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+.col-a {
+    grid-area: A;
+}
+.col-b {
+    grid-area: B;
+}
+
+.btn-doacao-topo{
+    background-color:var(--green-primary);
+    color: white;
+    border: 1px solid var(--green-primary);
+    border-radius: 4rem;
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    width: 19rem;
+    height: 3.8rem;
+}
+.txt-paragraph{
+    font-size: 1.6rem;
+    line-height: 130%;
+}
+.txt-green{
+    font-size: 1.6rem;
+    color: var(--green-secundary);
+    font-weight: 700;
+}
+.subtitle{
+    font-size: 5rem;
+    color: var(--green-primary);
+}
+/* ================== HEADER ================== */
+
+.header{
+    height: var(--nav--heigth); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-between;
+
+    border: 1px solid red;
+}
+.header .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+.logo{
+    width: 4rem;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    padding-inline: 2rem;
+    gap: 2rem;
+}
+.nav-menu a {
+    color:var(--green-primary);
+    font-size: 1.8rem;
+}
+
+/* ================== HOME ================== */
+
+.section-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.info-belagua{
+    display: grid;
+    height: 15rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+   
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'A B';
+
+    border: 1px solid red;
+    
+    padding-inline: 2rem;
+}
+
+.txt-missao{
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
+/* ================== FAÇA PARTE ================== */
+.section-facaParte .wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+
+.section-facaParte{
+    text-align: center;
+    border: 1px solid rgb(252, 71, 0);
+
+}
+.box-txt{
+width: 100vw
+}
+.card{
+    width: 30%;
+    height: 40rem;
+    margin: 1rem;
+    background-color:#364F75;
+    border: 1px solid #364F75;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 2.6rem;  
+    
+}
+#doe{
+    background-color:#1C5253;
+}
+
+#parceiro{
+   background-color: #F42272;
+}
+.box-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h2{
+    color: white;
+    font-size: 2.8rem;
+}
+.card p{
+    color: white;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.btn-whats{
+    background-color:#2ED197;
+    color: white;
+    border: 1px solid #2ED197;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 19rem;
+    height: 4.5rem;
+}
+
