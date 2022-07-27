@@ -8,8 +8,13 @@
     --green-secundary: #2ED197;
     --green-hover: #2E5339;
 
-    --background-primary:#F9F9F9;
+    --blue-primary:#364F75;
+    --grafit:#838383;
+
+    --background-primary:#F8FAFF;
     --background-secundary: #EEE5E9;
+
+    --background-platinum: #E6E8E6;
 
     --nav--heigth: 7.2rem;
     font-size: 62.5%;
@@ -23,10 +28,11 @@
     align-items: center;
     justify-content: center;
     margin-inline: auto;
+    background-color: var(--background-primary);
     
 }
 .wrapper{
-    width: min(100rem, 100vw);
+    width: min(102.4rem, 100vw);
 }
 ul, a, li {
     list-style: none;
@@ -39,18 +45,16 @@ html {
 body{
     font-family: 'Playfair Display', serif;
 }
-
 .col-a {
     grid-area: A;
 }
 .col-b {
     grid-area: B;
 }
-
 .btn-doacao-topo{
-    background-color:var(--green-primary);
+    background-color:var(--blue-primary);
     color: white;
-    border: 1px solid var(--green-primary);
+    border: none;
     border-radius: 4rem;
     font-size: 1.8rem;
 
@@ -65,6 +69,7 @@ body{
 .txt-paragraph{
     font-size: 1.6rem;
     line-height: 130%;
+    color: rgb(43, 43, 43);
 }
 .txt-green{
     font-size: 1.6rem;
@@ -76,15 +81,12 @@ body{
     color: var(--green-primary);
 }
 /* ================== HEADER ================== */
-
 .header{
     height: var(--nav--heigth); 
     display: flex;
     flex-direction: row;
     align-items: center;  
     justify-content: space-between;
-
-    border: 1px solid red;
 }
 .header .wrapper{
     display: flex;
@@ -104,18 +106,19 @@ body{
     gap: 2rem;
 }
 .nav-menu a {
-    color:var(--green-primary);
+    color:var(--blue-primary);
     font-size: 1.8rem;
+    font-weight: 700;
 }
-
 /* ================== HOME ================== */
-
+.banner{
+    width: 100%;
+}
 .section-home{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 .info-belagua{
     display: grid;
@@ -126,29 +129,27 @@ body{
    
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 'A B';
-
-    border: 1px solid red;
     
     padding-inline: 2rem;
-}
 
+    background-color: var(--background-primary);
+}
 .txt-missao{
     font-size: 2.4rem;
     line-height: 150%;
+    color: var(--blue-primary);
 }
-
 /* ================== FAÇA PARTE ================== */
 .section-facaParte .wrapper{
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
 }
-
-
 .section-facaParte{
     text-align: center;
-    border: 1px solid rgb(252, 71, 0);
+    padding-block: 4rem 8rem;
 
+    background-color: var(--background-primary);
 }
 .box-txt{
 width: 100vw
@@ -156,9 +157,9 @@ width: 100vw
 .card{
     width: 30%;
     height: 40rem;
-    margin: 1rem;
+    margin: 3rem 1rem 2rem 1rem;
     background-color:#364F75;
-    border: 1px solid #364F75;
+    border: none;
     border-radius: 2rem;
 
     display: flex;
@@ -168,12 +169,10 @@ width: 100vw
     gap: 4rem;
 
     padding: 2.6rem;  
-    
 }
 #doe{
     background-color:#1C5253;
 }
-
 #parceiro{
    background-color: #F42272;
 }
@@ -194,7 +193,7 @@ width: 100vw
 .btn-whats{
     background-color:#2ED197;
     color: white;
-    border: 1px solid #2ED197;
+    border: none;
     border-radius: 4rem;
     font-size: 1.6rem;
 
@@ -206,4 +205,129 @@ width: 100vw
     width: 19rem;
     height: 4.5rem;
 }
+#parceiro .btn-whats{
+    background-color:#364F75 ;
+    
+}
+/* ================== PROJETOS EM ANDAMENTO ================== */
 
+.section-projetos{
+    padding-block: 4rem 8rem;
+    background-color: white;
+}
+.box-projetos{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.card-projeto{
+    width: 47%;
+    height: 70rem;
+    margin: 3rem 1rem 2rem 1rem;
+    border: 1px solid #ffb833 ;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;  
+}
+.img-projeto-recorrente{
+width: 100%;
+border-radius: 2rem;
+}
+.box-txt{
+    width: 100%;
+    text-align: center;
+}
+.box-txt h2{
+    color: var(--blue-primary);
+}
+.box-arrecadacao{
+    background-color: var(--background-primary);
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: center;
+}
+.card-projeto h2{
+    color: var(--blue-primary);
+    font-size: 2.6rem;
+}
+.card-projeto p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.box-arrecadacao h2{
+    text-transform: uppercase;
+    color: var(--grafit);
+    font-size: 1.6rem;
+}
+.box-arrecadacao h3{
+    color: var(--blue-primary);
+    font-size: 1.8rem;
+}
+.box2, .box3{
+    border-left: 1px var(--grafit) solid;
+     
+}
+
+/* ================== VOLUNTARIOS ================== */
+.section-voluntarios{
+    background-color: var(--background-primary);
+    padding-block: 4rem 8rem;
+}
+.box-voluntarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    padding: 3rem 2rem;
+
+}
+.card-voluntario{
+    width: 50%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+    margin-bottom: 2rem;
+}
+.img-voluntario{
+    width: 60%;
+    border-radius: 4rem;
+}
+.txt-voluntario{
+    background-color:white;
+    border-radius: 4rem;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: -5rem;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding-inline: 2rem;
+    text-align: left;
+}
+.txt-voluntario h2{
+    color: var(--blue-primary);
+    font-size: 2.2rem;
+}
+.txt-voluntario h3{
+    color: var(--grafit);
+    font-size: 1.6rem;
+}
+.voluntario-social-links{
+    padding-top: 2.5rem;
+}
+.voluntario-social-links img{
+   width: 3.5rem;
+}
+/* ================== VOLUNTARIOS ================== */
