@@ -81,6 +81,13 @@ body{
     font-size: 5rem;
     color: var(--green-primary);
 }
+/* textos inicio de seção */
+.box-txt{
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
 /* ================== HEADER ================== */
 .header{
     height: var(--nav--heigth); 
@@ -180,13 +187,8 @@ body{
 }
 .section-facaParte{
     text-align: center;
-    padding-block: 4rem 8rem;
-
     background-color: var(--background-primary);
-   
-}
-.box-txt{
-width: 100vw
+    margin-bottom: 2rem;
 }
 .card{
     width: 30%;
@@ -205,6 +207,7 @@ width: 100vw
     padding: 2.6rem;  
 
     box-shadow: 0rem 0rem 1rem;
+    margin-bottom: 16rem;
 }
 #doe{
     background-color:#1C5253;
@@ -255,13 +258,13 @@ width: 100vw
 /* ================== PROJETOS EM ANDAMENTO ================== */
 
 .section-projetos{
-    padding-block: 4rem 8rem;
     background-color: white;
 }
 .box-projetos{
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   margin-bottom: 5rem;
 }
 .card-projeto{
     width: 47%;
@@ -280,10 +283,6 @@ width: 100vw
 .img-projeto-recorrente{
 width: 100%;
 border-radius: 2rem;
-}
-.box-txt{
-    width: 100%;
-    text-align: center;
 }
 .box-txt h2{
     color: var(--blue-primary);
@@ -321,19 +320,17 @@ border-radius: 2rem;
     border-left: 1px var(--grafit) solid;
      
 }
-
 /* ================== VOLUNTARIOS ================== */
 .section-voluntarios{
     background-color: var(--background-primary);
-    padding-block: 4rem 8rem;
 }
 .box-voluntarios{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
     
-    padding: 3rem 2rem;
-
 }
 .card-voluntario{
     width: 50%;
@@ -380,4 +377,71 @@ border-radius: 2rem;
    width: 3.5rem;
    
 }
-/* ================== VOLUNTARIOS ================== */
+/* ================== GALERIA ================== */
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: auto;    
+} 
+.min{
+    width: 22rem;
+    margin: 1rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 0.5rem black;
+}
+.min:hover{
+    transform: scale(1.1);
+}
+.galeria{
+    display: flex;
+}
+.galeriaExpanded{
+    width: 100rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.galeriaExpanded:target{
+    visibility: visible;
+    opacity: 1;
+    width: 100vw;
+    height: 100vw;
+    background: rgb(10,10,10,0.7) ;
+    top: 0;
+    left: 0;
+    position:fixed;
+}
+.box-img{
+   margin: 5rem 10rem;   
+}
+.box-img img{
+    border-radius: 2rem;
+    opacity: 0;
+}
+.galeriaExpanded:target .box-img img{
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+.btn-galeria{
+    color: white;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+}
+#prev{
+    left: 40px;
+    top: 45%;
+}
+#next{
+    right: 20px;
+    top: 45%;
+}
+#close{
+    right: 2%;
+    top: 2%;
+}
