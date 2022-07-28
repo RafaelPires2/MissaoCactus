@@ -43,7 +43,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bree Serif', serif;
 }
 .col-a {
     grid-area: A;
@@ -57,14 +57,15 @@ body{
     border: none;
     border-radius: 4rem;
     font-size: 1.8rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
-
     width: 19rem;
     height: 3.8rem;
+}
+.btn-doacao-topo:hover{
+    background-color: rgb(199, 96, 0);
+    box-shadow: 0.2rem 0.2rem 4rem rgb(0, 0, 0);
 }
 .txt-paragraph{
     font-size: 1.6rem;
@@ -109,6 +110,25 @@ body{
     color:var(--blue-primary);
     font-size: 1.8rem;
     font-weight: 700;
+    position: relative;
+    opacity: .8;
+}
+.nav-menu a::after{
+    content: " ";
+    width: 0%;
+    height: .5rem;
+    background-color: var(--blue-primary);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+.nav-menu a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.nav-menu a:hover{
+    opacity: 1;
 }
 /* ================== HOME ================== */
 .banner{
@@ -135,9 +155,22 @@ body{
     background-color: var(--background-primary);
 }
 .txt-missao{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     line-height: 150%;
     color: var(--blue-primary);
+    position: relative;
+    text-align: center;
+    
+}
+.txt-missao::after{
+    content: "";
+    width: 100%;
+    height: .5rem;
+    background-color: var(--green-hover);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
 }
 /* ================== FAÇA PARTE ================== */
 .section-facaParte .wrapper{
@@ -150,6 +183,7 @@ body{
     padding-block: 4rem 8rem;
 
     background-color: var(--background-primary);
+   
 }
 .box-txt{
 width: 100vw
@@ -169,6 +203,8 @@ width: 100vw
     gap: 4rem;
 
     padding: 2.6rem;  
+
+    box-shadow: 0rem 0rem 1rem;
 }
 #doe{
     background-color:#1C5253;
@@ -205,9 +241,16 @@ width: 100vw
     width: 19rem;
     height: 4.5rem;
 }
+.btn-whats:hover{
+   background-color: rgb(199, 96, 0);
+   box-shadow: 0.2rem 0.2rem 4rem rgb(0, 0, 0);
+}
 #parceiro .btn-whats{
-    background-color:#364F75 ;
-    
+    background-color:#364F75 ; 
+}
+#parceiro .btn-whats:hover{
+   background-color: rgb(199, 96, 0);
+   box-shadow: 0.2rem 0.2rem 4rem rgb(0, 0, 0);  
 }
 /* ================== PROJETOS EM ANDAMENTO ================== */
 
@@ -230,6 +273,9 @@ width: 100vw
     flex-direction: column;
     gap: 3rem;
     padding: 2rem;  
+
+    box-shadow: 0rem 0rem .5rem;
+
 }
 .img-projeto-recorrente{
 width: 100%;
@@ -256,10 +302,10 @@ border-radius: 2rem;
 }
 .card-projeto h2{
     color: var(--blue-primary);
-    font-size: 2.6rem;
+    font-size: 2.4rem;
 }
 .card-projeto p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
 }
 .box-arrecadacao h2{
@@ -301,6 +347,7 @@ border-radius: 2rem;
 .img-voluntario{
     width: 60%;
     border-radius: 4rem;
+    box-shadow: 0rem 0rem 1rem rgb(1, 75, 53);
 }
 .txt-voluntario{
     background-color:white;
@@ -315,6 +362,8 @@ border-radius: 2rem;
     justify-content: center;
     padding-inline: 2rem;
     text-align: left;
+
+    box-shadow: 0rem 0rem 1rem rgb(1, 75, 53);
 }
 .txt-voluntario h2{
     color: var(--blue-primary);
@@ -329,5 +378,6 @@ border-radius: 2rem;
 }
 .voluntario-social-links img{
    width: 3.5rem;
+   
 }
 /* ================== VOLUNTARIOS ================== */
