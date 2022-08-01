@@ -10,11 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <title>Missão Cactus</title>
 </head>
-<body>
+<body onscroll="navOnScroll()">
     <div class="container">
         
         <header class="header">
             <div class="wrapper">
+                <div id="navigation">
+                <div class="navContent">
                 <a href="#"><img class="logo" src="./img/logoCactus.png"/></a>
                 <ul class="nav-menu">
                     <li><a href="#">Home</a></li> 
@@ -23,6 +25,8 @@
                     <li><a href="#">Contatos</a></li>              
                 </ul>
                 <a href="#" class="btn-doacao-topo">Doe Agora</a>
+                </div>
+                </div>
             </div>
         </header>
 
@@ -37,7 +41,8 @@
             <div class="col-b">
                 <h3 class="txt-missao">A Missão Cactus</h3>
                 <h3 class="txt-missao">Atende cerca de</h3>
-                <h3 class="txt-missao">3 povoados</h3>
+                <h3 class="txt-missao">2.000 pessoas</h3>
+                <h3 class="txt-missao">Em 3 povoados</h3>
             </div>
         </div>
     </div>
@@ -191,6 +196,7 @@
         </div>
 
         <div class="box-voluntarios">
+
             <div class="card-voluntario">
                 <img class="img-voluntario" src="./img/thiago1.png" alt="foto do voluntario">
             <div class="txt-voluntario">
@@ -198,17 +204,15 @@
                 <h2>Thiago Silva</h2>
                 <h3>Cargo</h3>
 
-                <div class="voluntario-social-links">
+                <div class="social-links">
                     <a href="#" class="icon-facebook" target="_blank"><img src="./img/face1.png"></a>
-                    <a href="#" class="icon-istagram" target="_blank"><img src="./img/insta1.png"></a>
+                    <a href="#" class="icon-instagram" target="_blank"><img src="./img/insta1.png"></a>
                     
                 </div>
 
                 </div>
              </div>
        
-
-        
             <div class="card-voluntario">
                 <img class="img-voluntario" src="./img/thiago1.png" alt="foto do voluntario">
                 <div class="txt-voluntario">
@@ -216,9 +220,9 @@
                 <h2>Thiago Silva</h2>
                 <h3>Cargo</h3>
 
-                <div class="voluntario-social-links">
+                <div class="social-links">
                     <a href="#" class="icon-facebook" target="_blank"><img src="./img/face1.png"></a>
-                    <a href="#" class="icon-istagram" target="_blank"><img src="./img/insta1.png"></a>
+                    <a href="#" class="icon-instagram" target="_blank"><img src="./img/insta1.png"></a>
                 </div>
 
                 </div>
@@ -231,9 +235,9 @@
                 <h2>Thiago Silva</h2>
                 <h3>Cargo</h3>
 
-                <div class="voluntario-social-links">
+                <div class="social-links">
                     <a href="#" class="icon-facebook" target="_blank"><img src="./img/face1.png"></a>
-                    <a href="#" class="icon-istagram" target="_blank"><img src="./img/insta1.png"></a>
+                    <a href="#" class="icon-instagram" target="_blank"><img src="./img/insta1.png"></a>
                 </div>
 
                 </div>
@@ -246,9 +250,9 @@
                 <h2>Thiago Silva</h2>
                 <h3>Cargo</h3>
 
-                <div class="voluntario-social-links">
-                    <a href="#" class="icon-facebook" target="_blank"><img src="./img/face1.png"></a>
-                    <a href="#" class="icon-istagram" target="_blank"><img src="./img/insta1.png"></a>
+                <div class="social-links">
+                    <a href="#" class="icon-facebook" target="_blank" ><img src="./img/face1.png"></a>
+                    <a href="#" class="icon-instagram" target="_blank"><img src="./img/insta1.png"></a>
                 </div>
 
                 </div>
@@ -308,12 +312,59 @@
                         <a href="#img1" class="btn-galeria" id="next">&#187;</a>
                     </div>
                 </div>
-                
+            </section>
               
-            
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="box-logo">
+                <img class="logo" src="./img/logoCactus.png" alt="logo">
+                <div class="social-links-footer">
+                    <a href="#" class="icon-facebook social-links" target="_blank"><img src="./img/face1.png"></a>
+                    <a href="#" class="icon-instagram social-links" target="_blank"><img src="./img/insta1.png"></a>
+                    <a href="#" class="icon-youtube social-links" target="_blank"><img src="./img/youtube1.png"></a>
+
+                </div>
+                
+            </div>
+
+            <div class="endereco">
+                <h2>Nossa Sede</h2>
+               <a href="#"> <img src="./img/face1.png" width="25rem">Rua  Base missionária BL - UBS/MA</a>
+            </div>
+
+            <div class="contatos">
+                <h2>Nossos Contatos</h2>
+                    <a href="#"><img src="./img/face1.png" width="25rem">
+                         (11) 90000-0000
+                    </a>
+                
+                    <a href="#"><img src="./img/face1.png" width="25rem">
+                         (11) 90000-0000
+                    </a>
+
+                    <a href="mailto:email@gmail.com"><img src="./img/face1.png" width="25rem">
+                        email@gmail.com
+                   </a>
+
+                
+            </div>
+
+            <div class="apoio">
+                <h2>Apoio</h2>
+                <a href="#"><h3>Nossas Campanhas</h3></a>
+                <a href="#"><h3>Entre em contato com a gente</h3></a>
+                <a href="#"><h3>Doações</h3></a>
+            </div>
         </div>
-    </section>
+
+
+    </footer>
+
+        </div>
+    
 
     </div>
+
+<script src="./scripts.js/main.js"></script>
 </body>
 </html>

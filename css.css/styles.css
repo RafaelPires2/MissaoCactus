@@ -37,7 +37,12 @@
 ul, a, li {
     list-style: none;
     text-decoration: none;
+    text-decoration-style: none;
 }
+a{
+    color:inherit;
+}
+
 html {
     /* move o scroll de forma mais leve */
     scroll-behavior: smooth;
@@ -89,19 +94,24 @@ body{
     margin-bottom: 6rem;
 }
 /* ================== HEADER ================== */
-.header{
-    height: var(--nav--heigth); 
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    justify-content: space-between;
+
+#navigation{
+    
+    background-color: rgb(255, 187, 0);
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
-.header .wrapper{
+.navContent{
     display: flex;
     flex-direction: row;
     align-items: center;  
     justify-content: space-between;
+
     padding-inline: 2rem;
+    
+    width: 102.4rem;
+   
 }
 .logo{
     width: 4rem;
@@ -119,6 +129,8 @@ body{
     font-weight: 700;
     position: relative;
     opacity: .8;
+
+    
 }
 .nav-menu a::after{
     content: " ";
@@ -136,6 +148,9 @@ body{
 }
 .nav-menu a:hover{
     opacity: 1;
+}
+#navigation.scroll{
+    background-color: #ffffff;    
 }
 /* ================== HOME ================== */
 .banner{
@@ -167,18 +182,17 @@ body{
     color: var(--blue-primary);
     position: relative;
     text-align: center;
-    
 }
 .txt-missao::after{
     content: "";
     width: 100%;
-    height: .5rem;
-    background-color: var(--green-hover);
+    height: .3rem;
+    background-color: red;
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
-
 }
+
 /* ================== FAÇA PARTE ================== */
 .section-facaParte .wrapper{
    display: flex;
@@ -370,10 +384,10 @@ border-radius: 2rem;
     color: var(--grafit);
     font-size: 1.6rem;
 }
-.voluntario-social-links{
+.social-links{
     padding-top: 2.5rem;
 }
-.voluntario-social-links img{
+.social-links img{
    width: 3.5rem;
    
 }
@@ -401,6 +415,8 @@ border-radius: 2rem;
     width: 100rem;
     visibility: hidden;
     opacity: 0;
+    display: none;
+   
 }
 .galeriaExpanded:target{
     visibility: visible;
@@ -444,4 +460,67 @@ border-radius: 2rem;
 #close{
     right: 2%;
     top: 2%;
+}
+
+/* ================== FOOTER ================== */
+footer .wrapper{
+    background-color: #393939;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+.box-logo{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.endereco,
+.contatos,
+.apoio{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.endereco h2,
+.contatos h2,
+.apoio h2{
+font-size: 2.2rem;
+color: white;
+padding-bottom: 2rem;
+
+}
+.endereco h2::before,
+.contatos h2::before,
+.apoio h2::before{
+content:" ";
+background-color: brown;
+width: 5%;
+height: 5px;
+position: absolute;
+bottom: -3920px;
+left: 1;
+}
+.endereco h3,
+.contatos h3,
+.apoio h3{
+font-size: 1.5rem;
+color: white;
+font-weight: 400;
+}
+.contatos a,
+.endereco a
+{
+font-size: 1.5rem;
+color: white;
+font-weight: 400;
+display: flex;
+justify-items: center;
+align-items: center;
+gap: 1rem;
 }
