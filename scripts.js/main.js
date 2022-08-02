@@ -51,3 +51,14 @@ iconsYoutube.forEach(function (anchor) {
         e.target.setAttribute('src', "./img/youtube1.png" );
     })
 }) 
+
+const galeriaExpanded = document.querySelector('.galeriaExpanded');
+const galeria1 = document.querySelector('#galeria1');
+const min = document.querySelector('.min');
+
+function removeDisplay(){
+    galeria1.classList.remove('displayNone')
+}
+function addDisplay(){
+    galeria1.classList.add('displayNone')
+}

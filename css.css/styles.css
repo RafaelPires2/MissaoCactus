@@ -68,7 +68,11 @@ body{
     width: 19rem;
     height: 3.8rem;
 }
-.btn-doacao-topo:hover{
+#navigation.scroll .btn-doacao-topo{
+    background-color: var(--green-secundary);
+    box-shadow: 0.2rem 0.2rem 4rem rgb(0, 0, 0);
+}
+#navigation.scroll .btn-doacao-topo:hover{
     background-color: rgb(199, 96, 0);
     box-shadow: 0.2rem 0.2rem 4rem rgb(0, 0, 0);
 }
@@ -86,6 +90,9 @@ body{
     font-size: 5rem;
     color: var(--green-primary);
 }
+.displayNone{
+    display: none;
+}
 /* textos inicio de seção */
 .box-txt{
     width: 100%;
@@ -95,12 +102,12 @@ body{
 }
 /* ================== HEADER ================== */
 
-#navigation{
-    
-    background-color: rgb(255, 187, 0);
+.navigation{
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
+    width: 100%;
 }
 .navContent{
     display: flex;
@@ -109,8 +116,10 @@ body{
     justify-content: space-between;
 
     padding-inline: 2rem;
+    margin-inline: auto;
     
-    width: 102.4rem;
+    
+    
    
 }
 .logo{
@@ -150,7 +159,12 @@ body{
     opacity: 1;
 }
 #navigation.scroll{
-    background-color: #ffffff;    
+    background-color: #022b00;
+     
+}
+#navigation.scroll .nav-menu a{
+    color: white;
+     
 }
 /* ================== HOME ================== */
 .banner{
@@ -272,6 +286,12 @@ body{
 /* ================== PROJETOS EM ANDAMENTO ================== */
 
 .section-projetos{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.section-projetos .wrapper{
     background-color: white;
 }
 .box-projetos{
@@ -412,11 +432,13 @@ border-radius: 2rem;
     display: flex;
 }
 .galeriaExpanded{
-    width: 100rem;
+    
     visibility: hidden;
-    opacity: 0;
-    display: none;
-   
+    opacity: 0; 
+
+    z-index: 999;
+
+    
 }
 .galeriaExpanded:target{
     visibility: visible;
@@ -427,17 +449,22 @@ border-radius: 2rem;
     top: 0;
     left: 0;
     position:fixed;
+
+    
 }
+
 .box-img{
-   margin: 5rem 10rem;   
+    margin: 5rem 10rem;   
 }
 .box-img img{
+    width: 100%;
     border-radius: 2rem;
     opacity: 0;
 }
 .galeriaExpanded:target .box-img img{
     opacity: 1;
     transition: opacity .5s linear;
+    
 }
 .btn-galeria{
     color: white;
@@ -495,7 +522,7 @@ color: white;
 padding-bottom: 2rem;
 
 }
-.endereco h2::before,
+/* .endereco h2::before,
 .contatos h2::before,
 .apoio h2::before{
 content:" ";
@@ -503,9 +530,11 @@ background-color: brown;
 width: 5%;
 height: 5px;
 position: absolute;
-bottom: -3920px;
+bottom: -3930px;
 left: 1;
-}
+} */
+
+
 .endereco h3,
 .contatos h3,
 .apoio h3{

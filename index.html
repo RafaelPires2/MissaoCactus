@@ -15,14 +15,14 @@
         
         <header class="header">
             <div class="wrapper">
-                <div id="navigation">
-                <div class="navContent">
+                <div id="navigation" class="navigation">
+                <div class="navContent wrapper">
                 <a href="#"><img class="logo" src="./img/logoCactus.png"/></a>
                 <ul class="nav-menu">
-                    <li><a href="#">Home</a></li> 
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Voluntários</a></li>
-                    <li><a href="#">Contatos</a></li>              
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#voluntarios">Voluntários</a></li>
+                    <li><a href="#footer">Contatos</a></li>              
                 </ul>
                 <a href="#" class="btn-doacao-topo">Doe Agora</a>
                 </div>
@@ -30,7 +30,7 @@
             </div>
         </header>
 
-    <section class="section-home">
+    <section id="home" class="section-home">
         <div class="wrapper">
             <img class="banner" src="./img/belagua.jpg" alt="banner imagem de belagua"/>
         
@@ -49,7 +49,7 @@
 
     </section>
 
-    <section class="section-facaParte">
+    <section id="facaParte" class="section-facaParte">
         <div class="wrapper">
             <div class="box-txt">
                 <p class="txt-green">Envolva-se Agora</p>
@@ -86,7 +86,7 @@
         </div>
     </section>
 
-    <section class="section-projetos">
+    <section id="projetos" class="section-projetos">
         <div class="wrapper">
             <div class="box-txt">
                 <p class="txt-green">Ações Recorrentes</p>
@@ -188,7 +188,8 @@
             </div>
         </div>
     </section>
-    <section class="section-voluntarios">
+
+    <section id="voluntarios" class="section-voluntarios">
     <div class="wrapper">
         <div class="box-txt">
             <p class="txt-green">Voluntários e Membros</p>
@@ -261,7 +262,7 @@
     </div>
     </section>
 
-    <section class="section-galeria">
+    <section id="galeria" class="section-galeria">
         <div class="wrapper">
             <div class="box-txt">
                 <p class="txt-green">Fotos / Galeria</p>
@@ -270,49 +271,54 @@
 
             
                 
-                <ul class="galeria">
-                    <li><a href="#img1"><img src="./img/galeria1.png" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a href="#img2"><img src="./img/galeria2.png" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a href="#img3"><img src="./img/galeria3.png" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a href="#img4"><img src="./img/galeria4.png" class="min" alt="imagem dos trabalhos"></a></li>
+                <ul removeDisplay() class="galeria">
+                    <li><a onclick="removeDisplay()"  href="#img1"><img src="./img/galeria1.png" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplay()" href="#img2"><img src="./img/galeria2.png" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplay()" href="#img3"><img src="./img/galeria3.png" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplay()" href="#img4"><img src="./img/galeria4.png" class="min" alt="imagem dos trabalhos"></a></li>
                 </ul>
 
-                <div class="galeriaExpanded" id="img1">
-                    <div class="box-img">
-                        <a href="#img4" class="btn-galeria" id="prev">&#171;</a>
-                        <a href="" class="btn-galeria" id="close">X</a>
-                        <img src="./img/galeria1.png" alt="imagem dos trabalhos">
-                        <a href="#img2" class="btn-galeria" id="next">&#187;</a>
-                    </div>
-                </div>
+                <div id="galeria1" class="displayNone">
 
-                <div class="galeriaExpanded" id="img2">
-                    <div class="box-img">
-                        <a href="#img1" class="btn-galeria" id="prev">&#171;</a>
-                        <a href="" class="btn-galeria" id="close">X</a>
-                        <img src="./img/galeria2.png" alt="imagem dos trabalhos">
-                        <a href="#img3" class="btn-galeria" id="next">&#187;</a>
-                    </div>
-                </div>
 
-                <div class="galeriaExpanded" id="img3">
-                    <div class="box-img">
-                        <a href="#img2" class="btn-galeria" id="prev">&#171;</a>
-                        <a href="" class="btn-galeria" id="close">X</a>
-                        <img src="./img/galeria3.png" alt="imagem dos trabalhos">
-                        <a href="#img4" class="btn-galeria" id="next">&#187;</a>
+                    <div class="galeriaExpanded" id="img1">
+                        <div class="box-img">
+                            <a href="#img4" class="btn-galeria" id="prev">&#171;</a>
+                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <img src="./img/galeria1.png" alt="imagem dos trabalhos">
+                            <a href="#img2" class="btn-galeria" id="next">&#187;</a>
+                        </div>
                     </div>
-                </div>
+    
+                    <div class="galeriaExpanded" id="img2">
+                        <div class="box-img">
+                            <a href="#img1" class="btn-galeria" id="prev">&#171;</a>
+                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <img src="./img/galeria2.png" alt="imagem dos trabalhos">
+                            <a href="#img3" class="btn-galeria" id="next">&#187;</a>
+                        </div>
+                    </div>
+    
+                    <div class="galeriaExpanded" id="img3">
+                        <div class="box-img">
+                            <a href="#img2" class="btn-galeria" id="prev">&#171;</a>
+                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <img src="./img/galeria3.png" alt="imagem dos trabalhos">
+                            <a href="#img4" class="btn-galeria" id="next">&#187;</a>
+                        </div>
+                    </div>
+    
+                    <div class="galeriaExpanded" id="img4">
+                        <div class="box-img">
+                            <a href="#img3" class="btn-galeria" id="prev">&#171;</a>
+                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <img src="./img/galeria4.png" alt="imagem dos trabalhos">
+                            <a href="#img1" class="btn-galeria" id="next">&#187;</a>
+                        </div>
+                    </div>
 
-                <div class="galeriaExpanded" id="img4">
-                    <div class="box-img">
-                        <a href="#img3" class="btn-galeria" id="prev">&#171;</a>
-                        <a href="" class="btn-galeria" id="close">X</a>
-                        <img src="./img/galeria4.png" alt="imagem dos trabalhos">
-                        <a href="#img1" class="btn-galeria" id="next">&#187;</a>
-                    </div>
                 </div>
-            </section>
+    </section>
               
     <footer id="footer">
         <div class="wrapper">
@@ -329,20 +335,20 @@
 
             <div class="endereco">
                 <h2>Nossa Sede</h2>
-               <a href="#"> <img src="./img/face1.png" width="25rem">Rua  Base missionária BL - UBS/MA</a>
+               <a href="#" target="_blank"> <img src="./img/icon-map.png" width="20rem">Rua  Base missionária BL - UBS/MA</a>
             </div>
 
             <div class="contatos">
                 <h2>Nossos Contatos</h2>
-                    <a href="#"><img src="./img/face1.png" width="25rem">
+                    <a href="#" target="_blank"><img src="./img/icon-whatsapp.png" width="20rem">
                          (11) 90000-0000
                     </a>
                 
-                    <a href="#"><img src="./img/face1.png" width="25rem">
+                    <a href="#" target="_blank"><img src="./img/icon-whatsapp.png" width="20rem">
                          (11) 90000-0000
                     </a>
 
-                    <a href="mailto:email@gmail.com"><img src="./img/face1.png" width="25rem">
+                    <a href="mailto:email@gmail.com" target="_blank"><img src="./img/icon-email.png" width="20rem">
                         email@gmail.com
                    </a>
 
