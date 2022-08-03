@@ -1,0 +1,41 @@
+@media screen and (min-width: 360px) {
+    
+.wrapper{
+    width: min(36rem, 100vw);
+}
+.menuExpanded{
+position: fixed;
+top:0;
+left:0;
+width: 100vw;
+height: 100vh;
+background-color: rgb(247, 157, 157);
+
+border: 1px solid black;
+}
+.menuExpanded.navContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+
+border: 1px solid rgb(241, 109, 109);
+}
+.menuExpanded.nav-menu{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgb(14, 180, 36);
+    margin: 4rem;
+    
+}
+.menuExpanded.nav-menu a{
+    font-size: 2.4rem;
+}
+.btn-doacao-topo{
+  width: 27.4rem;
+  height: 5.5rem;
+}
+    
+}
