@@ -1,4 +1,13 @@
 const navigation = document.querySelector('#navigation');
+const body = document.querySelector("#body")
+const galeria1 = document.querySelector('#galeria1');
+
+const iconsFaceBook = document.querySelectorAll('.icon-facebook');
+const iconsIntagram = document.querySelectorAll('.icon-instagram');
+const iconsYoutube = document.querySelectorAll('.icon-youtube');
+
+
+
 
 // ============= SCROLL - ALTERA BACKGROUND =====================
 function navOnScroll(){
@@ -14,7 +23,6 @@ if (scrollY > 0) {
 // mouseover e um mouseout alterando o atributo src dele
 
 // ============= ALTERA ICON INSTAGRAM ================================
-const iconsFaceBook = document.querySelectorAll('.icon-facebook');
 
 iconsFaceBook.forEach(function (anchor) {
     anchor.firstElementChild.addEventListener('mouseover', function(e){
@@ -27,7 +35,6 @@ iconsFaceBook.forEach(function (anchor) {
 })
 
 // ============= ALTERA ICON INSTAGRAM ================================
-const iconsIntagram = document.querySelectorAll('.icon-instagram');
 
 iconsIntagram.forEach(function (anchor) {
     anchor.firstElementChild.addEventListener('mouseover', function(e){
@@ -40,7 +47,6 @@ iconsIntagram.forEach(function (anchor) {
 })  
 
 // ============= ALTERA ICON YOUTUBE ================================
-const iconsYoutube = document.querySelectorAll('.icon-youtube');
 
 iconsYoutube.forEach(function (anchor) {
     anchor.firstElementChild.addEventListener('mouseover', function(e){
@@ -52,13 +58,31 @@ iconsYoutube.forEach(function (anchor) {
     })
 }) 
 
-const galeriaExpanded = document.querySelector('.galeriaExpanded');
-const galeria1 = document.querySelector('#galeria1');
-const min = document.querySelector('.min');
+function removeDisplayAndDisableScroll(){
+    removeDisplay()
+    disableScroll()
+}
+
+function addDisplayAndEnableScroll(){
+    addDisplay()
+    enableScroll()
+}
+
+
+
+
 
 function removeDisplay(){
     galeria1.classList.remove('displayNone')
 }
 function addDisplay(){
     galeria1.classList.add('displayNone')
+}
+
+function disableScroll(){
+    body.classList.add('disableScroll')
+}
+
+function enableScroll(){
+    body.classList.remove('disableScroll')
 }

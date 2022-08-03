@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <title>Missão Cactus</title>
 </head>
-<body onscroll="navOnScroll()">
+<body onscroll="navOnScroll()" id="body">
     <div class="container">
         
         <header class="header">
@@ -22,6 +22,7 @@
                     <li><a href="#home">Home</a></li> 
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#voluntarios">Voluntários</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#footer">Contatos</a></li>              
                 </ul>
                 <a href="#" class="btn-doacao-topo">Doe Agora</a>
@@ -271,11 +272,11 @@
 
             
                 
-                <ul removeDisplay() class="galeria">
-                    <li><a onclick="removeDisplay()"  href="#img1"><img src="./img/galeria1.png" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a onclick="removeDisplay()" href="#img2"><img src="./img/galeria2.png" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a onclick="removeDisplay()" href="#img3"><img src="./img/galeria3.png" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a onclick="removeDisplay()" href="#img4"><img src="./img/galeria4.png" class="min" alt="imagem dos trabalhos"></a></li>
+                <ul class="galeria">
+                    <li><a onclick="removeDisplayAndDisableScroll()" href="#img1"><img src="./img/galeria1.png" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplayAndDisableScroll()" href="#img2"><img src="./img/galeria2.png" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplayAndDisableScroll()" href="#img3"><img src="./img/galeria3.png" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplayAndDisableScroll()" href="#img4"><img src="./img/galeria4.png" class="min" alt="imagem dos trabalhos"></a></li>
                 </ul>
 
                 <div id="galeria1" class="displayNone">
@@ -284,7 +285,7 @@
                     <div class="galeriaExpanded" id="img1">
                         <div class="box-img">
                             <a href="#img4" class="btn-galeria" id="prev">&#171;</a>
-                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <a onclick="addDisplayAndEnableScroll()" href="#galeria" class="btn-galeria" id="close">X</a>
                             <img src="./img/galeria1.png" alt="imagem dos trabalhos">
                             <a href="#img2" class="btn-galeria" id="next">&#187;</a>
                         </div>
@@ -293,7 +294,7 @@
                     <div class="galeriaExpanded" id="img2">
                         <div class="box-img">
                             <a href="#img1" class="btn-galeria" id="prev">&#171;</a>
-                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <a onclick="addDisplayAndEnableScroll()" href="#galeria" class="btn-galeria" id="close">X</a>
                             <img src="./img/galeria2.png" alt="imagem dos trabalhos">
                             <a href="#img3" class="btn-galeria" id="next">&#187;</a>
                         </div>
@@ -302,7 +303,7 @@
                     <div class="galeriaExpanded" id="img3">
                         <div class="box-img">
                             <a href="#img2" class="btn-galeria" id="prev">&#171;</a>
-                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <a onclick="addDisplayAndEnableScroll()" href="#galeria" class="btn-galeria" id="close">X</a>
                             <img src="./img/galeria3.png" alt="imagem dos trabalhos">
                             <a href="#img4" class="btn-galeria" id="next">&#187;</a>
                         </div>
@@ -311,7 +312,7 @@
                     <div class="galeriaExpanded" id="img4">
                         <div class="box-img">
                             <a href="#img3" class="btn-galeria" id="prev">&#171;</a>
-                            <a onclick="addDisplay()" href="#galeria" class="btn-galeria" id="close">X</a>
+                            <a onclick="addDisplayAndEnableScroll()" href="#galeria" class="btn-galeria" id="close">X</a>
                             <img src="./img/galeria4.png" alt="imagem dos trabalhos">
                             <a href="#img1" class="btn-galeria" id="next">&#187;</a>
                         </div>
@@ -357,7 +358,7 @@
 
             <div class="apoio">
                 <h2>Apoio</h2>
-                <a href="#"><h3>Nossas Campanhas</h3></a>
+                <a href="#projetos"><h3>Nossos Projetos</h3></a>
                 <a href="#"><h3>Entre em contato com a gente</h3></a>
                 <a href="#"><h3>Doações</h3></a>
             </div>

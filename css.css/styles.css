@@ -93,6 +93,9 @@ body{
 .displayNone{
     display: none;
 }
+.disableScroll{
+    overflow: hidden;
+}
 /* textos inicio de seção */
 .box-txt{
     width: 100%;
@@ -103,6 +106,7 @@ body{
 /* ================== HEADER ================== */
 
 .navigation{
+    background-color: #f8f2f2a8;
     position: fixed;
     top: 0;
     left: 0;
@@ -118,29 +122,29 @@ body{
     padding-inline: 2rem;
     margin-inline: auto;
     
-    
-    
    
 }
 .logo{
     width: 4rem;
+   
 }
 .nav-menu{
     display: flex;
     flex-direction: row;
     align-items: center;  
     padding-inline: 2rem;
-    gap: 2rem;
+    text-align: center;
+    gap: 3rem;
+    
 }
 .nav-menu a {
     color:var(--blue-primary);
     font-size: 1.8rem;
     font-weight: 700;
     position: relative;
-    opacity: .8;
-
-    
+    opacity: .8;    
 }
+
 .nav-menu a::after{
     content: " ";
     width: 0%;
@@ -419,6 +423,7 @@ border-radius: 2rem;
     justify-content: center;
     margin-inline: auto;    
 } 
+
 .min{
     width: 22rem;
     margin: 1rem;
@@ -427,39 +432,38 @@ border-radius: 2rem;
 }
 .min:hover{
     transform: scale(1.1);
+   
 }
 .galeria{
     display: flex;
 }
 .galeriaExpanded{
-    
     visibility: hidden;
     opacity: 0; 
-
     z-index: 999;
-
-    
 }
 .galeriaExpanded:target{
     visibility: visible;
     opacity: 1;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
+    
     background: rgb(10,10,10,0.7) ;
     top: 0;
     left: 0;
     position:fixed;
-
-    
+    z-index: 999;
 }
 
 .box-img{
-    margin: 5rem 10rem;   
+    /* margin: 5rem 10rem;    */
+    padding: 1rem 10rem;
 }
 .box-img img{
     width: 100%;
     border-radius: 2rem;
     opacity: 0;
+
 }
 .galeriaExpanded:target .box-img img{
     opacity: 1;
@@ -499,6 +503,7 @@ footer .wrapper{
     justify-content: space-around;
     margin-top: 10rem;
 }
+
 .box-logo{
     height: 80%;
     display: flex;
@@ -541,6 +546,7 @@ left: 1;
 font-size: 1.5rem;
 color: white;
 font-weight: 400;
+opacity: .8;
 }
 .contatos a,
 .endereco a
@@ -552,4 +558,17 @@ display: flex;
 justify-items: center;
 align-items: center;
 gap: 1rem;
+opacity: .8;
+}
+.contatos a:hover,
+.endereco a:hover
+{
+color: white;
+opacity: 1;
+}
+.endereco h3:hover,
+.contatos h3:hover,
+.apoio h3:hover{
+    color: white;
+    opacity: 1;
 }
