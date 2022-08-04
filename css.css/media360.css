@@ -1,14 +1,13 @@
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 1024px){
     
 .wrapper{
     width: min(36rem, 100vw);
+    padding-top: 4.5rem;
 }
-
 .navContent{
     padding: 0;
 }
 /* ===== ANTES DO MENU EXPANDED ===== */
-
 
 .logo{
     width: 4rem;
@@ -25,8 +24,6 @@
     opacity: 0;
     visibility: hidden;
 }
-
-
 /* ===== MENU EXPANDED ===== */
 body.menuExpanded #btnTopo{
     opacity:1;
@@ -101,6 +98,156 @@ body.menuExpanded #btnClose{
 body.menuExpanded #btnOpen{
     display: none;
 }
+/* ===== GERAL ===== */
 
+.txt-paragraph{
+    font-size: 1.8rem;
+}
+.subtitle{
+    font-size: 4.2rem;
+}
+
+/* ===== HOME ===== */
+
+.info-belagua{
+    grid-template-columns: 2fr;
+    grid-template-areas: 'B' 'A';
+
+    height: 100%;
+    text-align: center;
+
+    padding-top: 4rem;
+  
+}
+.info-belagua h3{
+    font-size: 3.4rem;
+}
+.info-belagua p{
+    padding-top: 4rem;
+}
+/* ===== FAÇA PARTE ===== */
+
+.section-facaParte .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .card{
+    width: 80%;
+    height: 40rem;
+    margin: 3rem 1rem 2rem 1rem;
+    background-color:#364F75;
+    border: none;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 2.6rem;  
+
+    box-shadow: 0rem 0rem 1rem;
+    margin-bottom: 1rem;
+}
+/* ===== PROJETOS ===== */
+
+.box-projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+ }
+ .card-projeto{
+    width: 90%;
+}
+.box-arrecadacao{
+    padding: 1rem;
+    width: 100%;
+}
+.box-arrecadacao h2{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.box-arrecadacao h3{
+    font-size: 1.4rem;
+}
+.box2, .box3{
+    padding-left: 2rem;   
+}
+
+/* ===== VOLUNTARIOS ===== */
+.box-voluntarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+    padding-left: 2rem;
+}
+.card-voluntario{
+    width: 100%;
+}
+.img-voluntario{
+    width: 60%;
+}
+.txt-voluntario{    
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    text-align: left;
+
+}
+.txt-voluntario h2{
+    font-size: 2rem;
+}
+.txt-voluntario h3{
+    font-size: 1.4rem;
+}
+.social-links{
+    padding-top: 2rem;
+}
+.social-links img{
+   width: 3rem;
+}
+/* ===== GALERIA ===== */
+
+.min{
+    width: 15rem;
+}
+.galeriaExpanded:target{   
+    background: rgba(10, 10, 10, 0.800) ;
+   
+}
+.box-img{
+   margin: 0;
+   padding: 0;
+
+   padding-top: 35%;
+}
+.box-img img{
+    width: 100%;
+    
+}
+.btn-galeria{
+    font-size: 4rem;
+    text-align: center;
+}
+#prev{
+    background: rgba(10, 10, 10, 0.7);
+    left: -2%;
+    top: 45%;
+}
+#next{
+    background: rgba(10, 10, 10, 0.7);
+    right: -2%;
+    top: 45%;
+}
+#close{
+    right: 1%;
+    top: 1%;
+    font-size: 3rem;
+}
 
 }
