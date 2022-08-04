@@ -3,39 +3,104 @@
 .wrapper{
     width: min(36rem, 100vw);
 }
-.menuExpanded{
+
+.navContent{
+    padding: 0;
+}
+/* ===== ANTES DO MENU EXPANDED ===== */
+
+
+.logo{
+    width: 4rem;
+    padding-bottom: 1rem;
+}
+.banner{
+    display: none;
+}
+#btnTopo{
+   opacity:0;
+   visibility: hidden;
+}
+#navMenu{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* ===== MENU EXPANDED ===== */
+body.menuExpanded #btnTopo{
+    opacity:1;
+    visibility: visible;
+}
+body.menuExpanded #navMenu{
+     opacity: 1;
+     visibility: visible;
+}
+body.menuExpanded{
+    overflow: hidden;
+}
+body.menuExpanded #navigation{
 position: fixed;
 top:0;
 left:0;
 width: 100vw;
 height: 100vh;
-background-color: rgb(247, 157, 157);
-
-border: 1px solid black;
+background-color: var(--blue-primary);
 }
-.menuExpanded.navContent{
+body.menuExpanded .navContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
-    
-
-border: 1px solid rgb(241, 109, 109);
 }
-.menuExpanded.nav-menu{
+body.menuExpanded .nav-menu{
     display: flex;
     flex-direction: column;
-
-    border: 1px solid rgb(14, 180, 36);
-    margin: 4rem;
+    margin: 4rem;  
+}
+body.menuExpanded .nav-menu a{
     
-}
-.menuExpanded.nav-menu a{
     font-size: 2.4rem;
+    font-weight: 400;
+    color: white;
+    opacity: .8;
 }
-.btn-doacao-topo{
+body.menuExpanded .nav-menu a:hover{
+    font-weight: 700;
+    opacity: 1;
+}
+body.menuExpanded .btn-doacao-topo{
   width: 27.4rem;
   height: 5.5rem;
+  background-color: var(--orange-btn);
+  box-shadow: var(--box-shadow-btn);
 }
-    
+body.menuExpanded .btn-doacao-topo:hover{
+    background-color: var(--green-secundary);
+  }
+.logoExpanded{
+    display: flex;
+    width: 100vw;
+    padding-inline: 2rem;
+    padding-top: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn-menu{
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+}
+.nav-menu a::after{
+ background-color: white;
+}
+body.menuExpanded #btnClose{
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+}
+body.menuExpanded #btnOpen{
+    display: none;
+}
+
+
 }

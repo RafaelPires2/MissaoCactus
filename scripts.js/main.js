@@ -2,6 +2,10 @@ const navigation = document.querySelector('#navigation');
 const body = document.querySelector("#body")
 const galeria1 = document.querySelector('#galeria1');
 
+// const navMenu = document.querySelector('#navMenu');
+// const btnTopo = document.querySelector('#btnTopo');
+
+
 const iconsFaceBook = document.querySelectorAll('.icon-facebook');
 const iconsIntagram = document.querySelectorAll('.icon-instagram');
 const iconsYoutube = document.querySelectorAll('.icon-youtube');
@@ -58,24 +62,22 @@ iconsYoutube.forEach(function (anchor) {
     })
 }) 
 
+
+// ========= scroll and galery =========== //
 function removeDisplayAndDisableScroll(){
-    removeDisplay()
+    removeDisplayNone()
     disableScroll()
 }
 
 function addDisplayAndEnableScroll(){
-    addDisplay()
+    addDisplayNone()
     enableScroll()
 }
 
-
-
-
-
-function removeDisplay(){
+function removeDisplayNone(){
     galeria1.classList.remove('displayNone')
 }
-function addDisplay(){
+function addDisplayNone(){
     galeria1.classList.add('displayNone')
 }
 
@@ -85,4 +87,21 @@ function disableScroll(){
 
 function enableScroll(){
     body.classList.remove('disableScroll')
+}
+
+// ============= MENU EXPANDED ================================
+
+function removeMenuExpanded(){
+    body.classList.remove('menuExpanded')
+    btnClose.classList.add('displayNone')
+
+    navMenu.classList.remove('displayNone')
+    btnTopo.classList.remove('displayNone')
+}
+function addMenuExpanded(){
+    body.classList.add('menuExpanded')
+    btnClose.classList.remove('displayNone')
+    
+    navMenu.classList.remove('displayNone')
+    btnTopo.classList.remove('displayNone')
 }

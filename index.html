@@ -24,15 +24,21 @@
             <div class="wrapper">
                 <div id="navigation" class="navigation">
                 <div class="navContent wrapper ">
-                <a href="#"><img class="logo" src="./img/logoCactus.png"/></a>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li> 
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#voluntarios">Voluntários</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#footer">Contatos</a></li>              
+                   
+                    <div class="logoExpanded">
+                        <a href="#"><img class="logo" src="./img/logoCactus.png"/></a>
+                        
+                        <a onclick="addMenuExpanded()" id="btnOpen"><img class="logo btn-menu" src="./img/icon-openMenu2.svg"/></a>
+                        <a onclick="removeMenuExpanded()" id="btnClose" class="displayNone"><img class="logo btn-menu" src="./img/icon-close.svg"/></a> 
+                    </div>
+                <ul id="navMenu" class="nav-menu">
+                    <li><a onclick="removeMenuExpanded()" href="#home">Home</a></li> 
+                    <li><a onclick="removeMenuExpanded()" href="#projetos">Projetos</a></li>
+                    <li><a onclick="removeMenuExpanded()" href="#voluntarios">Voluntários</a></li>
+                    <li><a onclick="removeMenuExpanded()" href="#galeria">Galeria</a></li>
+                    <li><a onclick="removeMenuExpanded()" href="#footer">Contatos</a></li>              
                 </ul>
-                <a href="#" class="btn-doacao-topo">Doe Agora</a>
+                <a id="btnTopo" href="#" class="btn-doacao-topo">Doe Agora</a>
                 </div>
                 </div>
             </div>

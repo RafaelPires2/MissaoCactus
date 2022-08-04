@@ -8,6 +8,9 @@
     --green-secundary: #2ED197;
     --green-hover: #2E5339;
 
+    --orange-btn: rgb(199, 96, 0);
+    --box-shadow-btn: 0.2rem 0.2rem 4rem rgb(0, 0, 0);
+
     --blue-primary:#364F75;
     --grafit:#838383;
 
@@ -110,7 +113,6 @@ body{
 /* ================== HEADER ================== */
 
 .navigation{
-    background-color: #f8f2f2a8;
     position: fixed;
     top: 0;
     left: 0;
