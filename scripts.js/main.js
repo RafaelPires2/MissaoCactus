@@ -1,10 +1,7 @@
 const navigation = document.querySelector('#navigation');
 const body = document.querySelector("#body")
 const galeria1 = document.querySelector('#galeria1');
-
-// const navMenu = document.querySelector('#navMenu');
-// const btnTopo = document.querySelector('#btnTopo');
-
+const btnOpen = document.querySelector(".btn-menu")
 
 const iconsFaceBook = document.querySelectorAll('.icon-facebook');
 const iconsIntagram = document.querySelectorAll('.icon-instagram');
@@ -17,8 +14,10 @@ const iconsYoutube = document.querySelectorAll('.icon-youtube');
 function navOnScroll(){
 if (scrollY > 0) {
     navigation.classList.add("scroll");
+    btnOpen.setAttribute('src', "./img/icon-openMenu2.svg")
     } else{
     navigation.classList.remove("scroll");
+    btnOpen.setAttribute('src', "./img/icon-openMenu1.svg")
     }
 }
 

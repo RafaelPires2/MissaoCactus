@@ -176,6 +176,12 @@ body{
     color: white;
      
 }
+#btnOpen{
+    cursor: pointer;
+}
+#btnClose{
+    cursor: pointer;
+}
 /* ================== HOME ================== */
 .banner{
     width: 100%;
@@ -493,15 +499,19 @@ margin-bottom: 2rem;
 #prev{
     left: 3%;
     top: 45%;
+    cursor: pointer;
 }
 #next{
     right: 3%;
     top: 45%;
+    cursor: pointer;
 }
 #close{
     right: 2%;
     top: 2%;
+    cursor: pointer;
 }
+
 
 /* ================== FOOTER ================== */
 #footer{
@@ -547,19 +557,6 @@ color: white;
 padding-bottom: 2rem;
 
 }
-/* .endereco h2::before,
-.contatos h2::before,
-.apoio h2::before{
-content:" ";
-background-color: brown;
-width: 5%;
-height: 5px;
-position: absolute;
-bottom: -3930px;
-left: 1;
-} */
-
-
 .endereco h3,
 .contatos h3,
 .apoio h3{
