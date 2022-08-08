@@ -1,0 +1,13 @@
+@media screen and (min-width: 425px) and (max-width: 1023px){
+
+.wrapper{
+    width: min(42.5rem, 100vw);
+}
+.box-txt{
+    width: 42.5rem;
+}
+.min{
+    width: 17rem;
+}
+
+}
