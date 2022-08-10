@@ -243,6 +243,9 @@ object-position:0% 60%;
 }
 
 /* ================== FAÇA PARTE ================== */
+.icon{
+    width: 7rem;
+}
 .section-facaParte .wrapper{
    display: flex;
    flex-wrap: wrap;
@@ -286,6 +289,8 @@ object-position:0% 60%;
 .card h2{
     color: white;
     font-size: 2.8rem;
+    padding-left: 1rem;
+    text-align: left;
 }
 .card p{
     color: white;
