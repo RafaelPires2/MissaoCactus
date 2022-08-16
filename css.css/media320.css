@@ -253,6 +253,7 @@ body.menuExpanded #btnOpen{
 
 .min{
     width: 13rem;
+    height: 13rem;
 }
 .galeriaExpanded:target{   
     background: rgba(10, 10, 10, 0.800) ;
