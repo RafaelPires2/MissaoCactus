@@ -1,6 +1,7 @@
 const navigation = document.querySelector('#navigation');
 const body = document.querySelector("#body")
 const galeria1 = document.querySelector('#galeria1');
+const galeria = document.querySelector('#galeria');
 const btnOpen = document.querySelector(".btn-menu")
 
 const iconsFaceBook = document.querySelectorAll('.icon-facebook');
@@ -66,11 +67,13 @@ iconsYoutube.forEach(function (anchor) {
 function removeDisplayAndDisableScroll(){
     removeDisplayNone()
     disableScroll()
+
 }
 
 function addDisplayAndEnableScroll(){
     addDisplayNone()
     enableScroll()
+    
 }
 
 function removeDisplayNone(){
@@ -104,3 +107,7 @@ function addMenuExpanded(){
     navMenu.classList.remove('displayNone')
     btnTopo.classList.remove('displayNone')
 }
+
+// ============= PERCORRE GALERIA ================================
+
+

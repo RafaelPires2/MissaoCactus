@@ -346,18 +346,44 @@
                     <li><a onclick="removeDisplayAndDisableScroll()" href="#img49"><img src="./img/music/music6.jpg" class="min" alt="imagem dos trabalhos"></a></li>
                     <li><a onclick="removeDisplayAndDisableScroll()" href="#img50"><img src="./img/music/music7.jpg" class="min" alt="imagem dos trabalhos"></a></li>
                     <li><a onclick="removeDisplayAndDisableScroll()" href="#img51"><img src="./img/music/music8.jpg" class="min" alt="imagem dos trabalhos"></a></li>
-                    <li><a onclick="removeDisplayAndDisableScroll()" href="#img52"><img src="./img/music/music9.jpg" class="min" alt="imagem dos trabalhos"></a></li>
+                    <li><a onclick="removeDisplayAndDisableScroll()" href="#galeria1"><img src="./img/music/music9.jpg" class="min" alt="imagem dos trabalhos"></a></li>
               
               
               
                 </ul>
+                
+                <div class="modal">
+                    <div class="modalContent">
+                        
+                        <button class="btn" onclick="prev()">&#171;</button>
+                        
+                        <img src="./img/alfabetizacao/alfabet1.jpg" id="modalImg">
+                        
+                        <button id="btnClose" class="btn" onclick="">&times;</button>
+                        <button class="btn" onclick="next()">&#187;</button>
+                   
+                    </div>
+                </div>
+               
+               
+                <div class="galeriaExpanded">              
+                    <a class="box-img">
+                        <img src="./img/cactus/cactus1.jpg" alt="imagem" class="slider-img">
+                  
+                        <button class="btn" onclick="prev()">&#171;</button>
+                        <button class="btn" onclick="next()">&#187;</button>
+                </div>
+               
 
-                <div id="galeria1" class="displayNone">
 
 
+
+
+
+<!-- 
                     <div class="galeriaExpanded" id="img1">
                         <div class="box-img">
-                            <a href="#img4" class="btn-galeria" id="prev">&#171;</a>
+                            <a onclick="prev()" href="#img4" class="btn-galeria" id="prev">&#171;</a>
                             <a onclick="addDisplayAndEnableScroll()" href="#galeria" class="btn-galeria" id="close">X</a>
                             <img src="./img/cactus/cactus1.JPG" alt="imagem dos trabalhos">
                             <a href="#img2" class="btn-galeria" id="next">&#187;</a>
@@ -389,7 +415,7 @@
                             <img src="./img/cactus/cactus4.jpg" alt="imagem dos trabalhos">
                             <a href="#img1" class="btn-galeria" id="next">&#187;</a>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
     </section>
@@ -446,5 +472,6 @@
     </div>
 
 <script src="./scripts.js/main.js"></script>
+<script src="./scripts.js/slider.js"></script>
 </body>
 </html>

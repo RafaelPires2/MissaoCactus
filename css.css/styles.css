@@ -456,6 +456,46 @@ margin-bottom: 2rem;
    
 }
 /* ================== GALERIA ================== */
+#modalImg{
+    width: 60%;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden;
+
+}
+.modalContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.btn{
+    background-color: #3d3d3d9c ;
+    color: white;
+    font-size: 4rem;
+    padding: 1rem 1.5rem;
+}
+#btnClose{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+.btn:hover{
+    background-color: var(--green-secundary);
+}
+
+
+
+
+
 
 .galeria{
     display: flex;
