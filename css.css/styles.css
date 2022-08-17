@@ -467,7 +467,7 @@ margin-bottom: 2rem;
     top: 0;
     left: 0;
     z-index: 1000;
-    visibility: hidden;
+    display: none;
 
 }
 .modalContent{
@@ -475,7 +475,17 @@ margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+    
 
+}
+#modalImg{
+    width: auto;
+    height: 80vh;
+    object-fit:contain;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem black;
+    
 }
 .btn{
     background-color: #3d3d3d9c ;
@@ -483,7 +493,7 @@ margin-bottom: 2rem;
     font-size: 4rem;
     padding: 1rem 1.5rem;
 }
-#btnClose{
+#btnCloseGaleria{
     position: fixed;
     top: 2rem;
     right: 2rem;
@@ -491,11 +501,9 @@ margin-bottom: 2rem;
 .btn:hover{
     background-color: var(--green-secundary);
 }
-
-
-
-
-
+.modalActive{
+    display: initial;
+}
 
 .galeria{
     display: flex;
@@ -509,6 +517,7 @@ margin-bottom: 2rem;
     margin: 1rem;
     border-radius: 4rem;
     box-shadow: 0 0 0.5rem black;
+    cursor: pointer;
 }
 .min:hover{
     transform: scale(1.1);
