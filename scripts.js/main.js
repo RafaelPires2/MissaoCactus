@@ -64,24 +64,7 @@ iconsYoutube.forEach(function (anchor) {
 
 
 // ========= scroll and galery =========== //
-function removeDisplayAndDisableScroll(){
-    removeDisplayNone()
-    disableScroll()
 
-}
-
-function addDisplayAndEnableScroll(){
-    addDisplayNone()
-    enableScroll()
-    
-}
-
-function removeDisplayNone(){
-    galeria1.classList.remove('displayNone')
-}
-function addDisplayNone(){
-    galeria1.classList.add('displayNone')
-}
 
 function disableScroll(){
     body.classList.add('disableScroll')
@@ -108,6 +91,5 @@ function addMenuExpanded(){
     btnTopo.classList.remove('displayNone')
 }
 
-// ============= PERCORRE GALERIA ================================
 
 

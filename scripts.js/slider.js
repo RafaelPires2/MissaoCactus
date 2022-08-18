@@ -17,11 +17,13 @@ for(let i = 0; i < min.length; i++) {
         currentImgIndex = i;
         modalImg.setAttribute('src', srcVal);
         modal.classList.toggle('modalActive')
+        disableScroll()
     })
 }
 
 btCloseGaleria.addEventListener('click', function(){
    modal.classList.toggle('modalActive');
+   enableScroll()
 });
 
 // ================ PREV AND NEXT IMAGES =============================
