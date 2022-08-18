@@ -168,8 +168,9 @@ body{
 }
 .nav-menu a:hover::after{
     width: 100%;
-    opacity: 1;
+    opacity: 1;    
 }
+
 .nav-menu a:hover{
     opacity: 1;
 }
@@ -342,7 +343,7 @@ object-position:0% 60%;
 }
 .card-projeto{
     width: 47%;
-    height: 70rem;
+    height: 75rem;
     margin: 3rem 1rem 2rem 1rem;
     border: 1px solid #ffb833 ;
     border-radius: 2rem;
@@ -468,30 +469,26 @@ margin-bottom: 2rem;
     left: 0;
     z-index: 1000;
     display: none;
-
 }
 .modalContent{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-    
-
 }
 #modalImg{
     width: auto;
-    height: 80vh;
+    height: 95vh;
     object-fit:contain;
     border-radius: 2rem;
-    box-shadow: 0rem 0rem 2rem black;
-    
+     
 }
 .btn{
     background-color: #3d3d3d9c ;
     color: white;
     font-size: 4rem;
     padding: 1rem 1.5rem;
+    border:1px solid rgb(38, 38, 38);
 }
 #btnCloseGaleria{
     position: fixed;
@@ -504,88 +501,24 @@ margin-bottom: 2rem;
 .modalActive{
     display: initial;
 }
-
 .galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-inline: auto;    
 } 
-
 .min{
     width: 22rem;
     margin: 1rem;
     border-radius: 4rem;
     box-shadow: 0 0 0.5rem black;
     cursor: pointer;
+    object-fit: cover;
 }
 .min:hover{
     transform: scale(1.1);
    
 }
-.galeria{
-    display: flex;
-}
-.galeriaExpanded{
-    visibility: hidden;
-    opacity: 0; 
-    z-index: 999;
-}
-.galeriaExpanded:target{
-    visibility: visible;
-    opacity: 1;
-    width: 100vw;
-    height: 100vh;
-    
-    background: rgb(10,10,10,0.7) ;
-    top: 0;
-    left: 0;
-    position:fixed;
-    z-index: 999;
-}
-
-.box-img{
-    /* margin: 5rem 10rem;    */
-    padding: 1rem 10rem;
-}
-.box-img img{
-    width: 100%;
-    border-radius: 2rem;
-    opacity: 0;
-
-}
-.galeriaExpanded:target .box-img img{
-    opacity: 1;
-    transition: opacity .5s linear;
-    
-}
-.btn-galeria{
-    color: white;
-    font-family: 'Arial';
-    text-decoration: none;
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    font-size: 4rem;
-    text-align: center;
-}
-#prev{
-    left: 3%;
-    top: 45%;
-    cursor: pointer;
-}
-#next{
-    right: 3%;
-    top: 45%;
-    cursor: pointer;
-}
-#close{
-    right: 2%;
-    top: 2%;
-    cursor: pointer;
-}
-
-
 /* ================== FOOTER ================== */
 #footer{
     background-color: #393939;

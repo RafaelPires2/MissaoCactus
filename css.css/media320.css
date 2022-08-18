@@ -148,7 +148,7 @@ body.menuExpanded #btnOpen{
     height: 100%;
     text-align: center;
 
-    padding-top: 80%;
+    padding-top: 40vh;
   
 }
 .info-belagua h3{
@@ -254,41 +254,26 @@ body.menuExpanded #btnOpen{
 .min{
     width: 13rem;
     height: 13rem;
+    object-fit: cover;
 }
-.galeriaExpanded:target{   
-    background: rgba(10, 10, 10, 0.800) ;
-   width: 100%;
-   height: 100%;
-}
-.box-img{
-   margin: 0;
-   padding: 0;
-
-   margin-top: 30%;
-}
-.box-img img{
+#modalImg{
     width: 100%;
-    
+    height: 95vh;
 }
-.btn-galeria{
-    font-size: 4rem;
-    text-align: center;
+#modalImg img{
+    border-radius: 2rem;
 }
-#prev{
-    background: rgba(10, 10, 10, 0.7);
-    left: -2%;
-    top: 45%;
+.btn{
+    font-size: 2rem;
+    position: fixed;
 }
-#next{
-    background: rgba(10, 10, 10, 0.7);
-    right: -2%;
-    top: 45%;
+#btnNext{
+    right:0;
 }
-#close{
-    right: 1%;
-    top: 1%;
-    font-size: 3rem;
+#btnPrev{
+    left:0;
 }
+
 /* ===== FOOTER ===== */
 
 #footer{

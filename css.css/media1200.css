@@ -3,36 +3,15 @@
 .wrapper{
     width: min(120rem, 100vw);
 }
-.box-img{
-    padding: 2rem 10rem;
-    display: flex;
-    justify-content: center;
-
-}
-.box-img img{
-    width: 70%;
-    
-    border-radius: 2rem;
-    opacity: 0;
-}
-#prev{
-    left: 15%;
-    top: 45%;
-}
-#next{
-    right: 15%;
-    top: 45%;
-}
-#close{
-    right: 15%;
-    top: 2%;
-}
 .box2, .box3{
     align-items: center;
     justify-content: center;
     border-left: 1px var(--grafit) solid;
     padding-left: 2rem;
      
+}
+.card-projeto{
+  height: 80rem;
 }
 
 }
