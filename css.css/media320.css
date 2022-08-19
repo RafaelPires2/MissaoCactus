@@ -20,6 +20,10 @@
 #navigation{
     z-index: 100;
 }
+.btn-whats{
+    width: 15rem;
+    height: 4.5rem;
+}
 /* ===== ANTES DO MENU EXPANDED ===== */
 #parceiro{
     height: 100%;
