@@ -136,8 +136,10 @@ body{
    
 }
 .logo{
-    width: 4rem;
-   
+    width: 5.5rem; 
+}
+.logo2{
+    width: 12rem;
 }
 .nav-menu{
     display: flex;
@@ -541,12 +543,11 @@ footer .wrapper{
 }
 
 .box-logo{
-   height: 15rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content:flex-start;
-    gap: 3rem;
 }
 .endereco,
 .contatos,
@@ -555,6 +556,9 @@ footer .wrapper{
     display: flex;
     flex-direction: column;
     justify-items: center;
+}
+.endereco{
+    width: 30rem;
 }
 .endereco h2,
 .contatos h2,
